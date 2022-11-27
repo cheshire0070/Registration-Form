@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>COMP125_ASSIGNMENT4</title>
+    <link rel="stylesheet" href="assignment4.css" />
+</head>
+<body>
+    <article>
+    <form>
+        <h2>Member Registration</h2><br />
+        <fieldset id="form" class="text">
+            <legend><b>Please complete all the fields below</b></legend><br /><br /><br />
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="firstName" placeholder="Enter Your First Name" oninput="setCustomValidity('')" /><br /><br />
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lastName" placeholder="Enter Your Last Name" oninput="setCustomValidity('')" /><br /><br />
+            <label for="address">Address</label>
+            <input type="text" name="Address" id="address" placeholder="Enter Your Address" oninput="setCustomValidity('')" /><br /><br />
+            <label for="city">City</label>
+            <input type="text" name="City" id="city" placeholder="Enter Your City" oninput="setCustomValidity('')" /><br /><br />
+            <label for="postalcode">Postal Code</label>
+            <input type="text" name="Postalcode" id="postalCode" placeholder="Enter Your Postal Code" oninput="setCustomValidity('')" /><br /><br />
+            <label for="province">Province</label>
+            <input type="text" name="Province" id="province" placeholder="QC/ON/MN/SK/AB/BC" oninput="setCustomValidity('')" /><br /><br />
+            <label for="age">Age</label>
+            <input type="number" name="Age" id="age" placeholder="Enter Your age" oninput="setCustomValidity('')" /><br /><br />
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password" placeholder="Enter Your Password" oninput="setCustomValidity('')" /><br /><br />
+            <label for="confirm">Confirm</label>
+            <input type="password" name="Confirm" id="confirm" placeholder="Confirm Your Password" oninput="setCustomValidity('')" /><br /><br />
+            <label for="email">Email</label>
+            <input type="text" name="Email" id="email" placeholder="Enter Your Email" oninput="setCustomValidity('')" /><br /><br />
+        </fieldset>
+
+        <div><button onclick="validateForm()">Register Now</button>
+            <button type="reset" value="Clear Form">Clear Form</button>
+        </div>
+        <footer><h5><i>&copy;&nbsp;&nbsp;Copyright Minjee Kim-301238097-COMP125-A4</i></h5></footer>
+    </form>
+    </article>
+    <script src="assignment4.js"></script>
+</body>
+</html>
